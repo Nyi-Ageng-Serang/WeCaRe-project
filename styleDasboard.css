@@ -137,7 +137,6 @@ a.side-link:hover{
     font-weight: 500;
 }
 
-
 /* MAIN */
 main {
     margin-left: 5vw;
@@ -154,4 +153,25 @@ main p {
     font-size: 1.25vw;
     line-height: 1.8;
     margin-bottom: 3rem;
+}
+
+/* Styling untuk section takeTest */
+.takeTest {
+    padding: 20px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+.takeTest .card {
+    width: 100%;
+    max-width: 40vw; 
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); 
+    background-color: #ffffff;
+    overflow: hidden; 
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.takeTest .card:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.52); 
+    transform: translateY(-5px); 
 }
