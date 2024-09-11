@@ -40,6 +40,7 @@ body, html {
     display: flex;
     flex-direction: column;
     background-color: var(--main-color);
+    z-index: 1000;
 }
 #sidebar a{
     text-decoration: none;
@@ -226,5 +227,11 @@ main p {
     /* Styling untuk section takeTest */
     .takeTest .card-body p {
         font-size: 1.125rem;
+    }
+}
+@media (max-width: 768px) {
+    /* Sidebar */
+    #sidebar {
+        min-width: 80px; 
     }
 }
