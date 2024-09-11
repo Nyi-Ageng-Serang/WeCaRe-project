@@ -19,42 +19,23 @@
 }
 
 /* SIDEBAR & TOP MAIN */
-a{
-    text-decoration: none;
-}
 li{
     list-style: none;
 }
-body{
+body, html {
+    font-family: var(--font-body1);
     background-color: #EBF4F6;
+    line-height: 1.6;
+    text-decoration: none;
 }
 .wrapper{
     display: flex;
 }
-.wrapper .main{
-    min-width: 100vh;
-    width: 100%;
-    height: 90px;
-    overflow: hidden;
-    transition: all 0.3s ease-in-out;
-    border-bottom: 1px solid #07195231;
-}
-.wrapper .main .text-end i {
-    padding: 1rem;
-    font-size: 2rem;
-    font-weight: 500;
-}
-.wrapper .main .text-end span {
-    padding: 0 2rem 0 0 ;
-    font-family: var(--font-accent);
-    font-size: 1.5rem;
-    font-weight: 500;
-}
 #sidebar{
+    position: fixed;
     min-width: 90px;
     width: 5vw;
     height: 100vh;
-    z-index: 1000;
     transition: all .25s ease-in-out;
     display: flex;
     flex-direction: column;
@@ -63,10 +44,8 @@ body{
 #sidebar a{
     text-decoration: none;
 }
-
 #sidebar.expand{
     width: 250px;
-    min-width: 250px
 }
 #sidelogo-btn{
     background-color: transparent;
@@ -94,10 +73,10 @@ body{
 #sidebar:not(.expand) a.side-link span{
     display: none;
 }
-
+/* sidebar Menu */
 .side-navbar{
-    padding: 3rem 0;
-    flex: 1 1 auto;
+    padding: 2rem 0;
+    flex: 1;
 }
 a.side-link {
     font-family: var(--font-body2);
@@ -129,4 +108,50 @@ li.side-item:nth-child(3) .side-link span{
 a.side-link:hover{
     background-color: rgba(225, 225, 225, .075);
     border-left: 3px solid #3b7ddd;
+}
+.side-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* HEADER */
+.main {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 2rem;
+    border-bottom: 1px solid #07195231;
+    color: var(--secondary-color);
+    transition: all 0.3s ease-in-out;
+}
+.main .text-end i {
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.main .text-end span {
+    padding: 0 2rem 0 0 ;
+    font-family: var(--font-accent);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+
+/* MAIN */
+main {
+    margin-left: 5vw;
+    padding: 2rem;
+    flex-grow: 1;
+}
+main h1 {
+    font-family: var(--font-secondary);
+    font-size: 2.5vw;
+    margin-bottom: 1rem;
+}
+main p {
+    font-family: var(--font-body2);
+    font-size: 1.25vw;
+    line-height: 1.8;
+    margin-bottom: 3rem;
 }
