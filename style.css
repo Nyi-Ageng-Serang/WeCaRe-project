@@ -1,62 +1,52 @@
 body {
-    background-color: #fcfcfb;
+  background-color: #fcfcfb;
+}
+
+div small {
+  background-color: #f2fde3;
+  border: 1px solid #8ab255;
 }
 
 /*** Navbar Start ***/
 .nav-bar {
-    
-    border-bottom: 1px solid rgba(0, 0, 0, .05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.nav-bar h1 {
+  color: #8ab255;
 }
 
 .navbar .navbar-nav .nav-link {
-    padding: 10px 12px;
-    font-weight: 600;
-    font-size: 17px;
-    transition: .5s;
+  padding: 10px 12px;
+  font-weight: 600;
+  font-size: 17px;
+  transition: 0.5s;
 }
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
-    color: var(--bs-primary);
-}
-
-.navbar .dropdown-toggle::after {
-    border: none;
-    content: "\f107";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 700;
-    vertical-align: middle;
-    margin-left: 8px;
+  color: #8ab255;
 }
 
 .btn {
-    margin-right: 10px;
-}
-
-@media (min-width: 1200px) {
-    .navbar .nav-item .dropdown-menu {
-        display: block;
-        visibility: hidden;
-        top: 100%;
-        transform: rotateX(-75deg);
-        transform-origin: 0% 0%;
-        transition: .5s;
-        opacity: 0;
-    }
-    
-    .navbar .nav-item:hover .dropdown-menu {
-        transform: rotateX(0deg);
-        visibility: visible;
-        opacity: 1;
-    }
-}
-
-.dropdown .dropdown-menu a:hover {
-    background: var(--bs-primary);
-    color: var(--bs-white);
-}
-
-#searchModal .modal-content {
-    background-color: rgba(255, 255, 255, .95);
+  background-color: #8ab255;
+  border: none;
 }
 /*** Navbar End ***/
+
+/*** Hero start ***/
+.hero {
+  min-height: 600px;
+  padding: 60px 10px;
+}
+
+/* story start */
+.story {
+  margin-bottom: 100px;
+}
+
+@media (max-width: 990px) {
+  .story {
+    flex-direction: column-reverse;
+  }
+}
