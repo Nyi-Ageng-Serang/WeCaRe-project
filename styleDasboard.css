@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
 *{
     box-sizing: border-box;
@@ -11,7 +11,11 @@
     --secondary-color: #FFB1B1; 
 
     /* Tipografi */
-    --font-primary: 'Poppins', sans-serif;
+    --font-primary: "Montserrat", sans-serif;
+    --font-secondary: "Playfair Display", serif;
+    --font-body1: 'Poppins', sans-serif;
+    --font-body2: "Source Sans 3", sans-serif;
+    --font-accent: "Raleway", sans-serif;
 }
 
 a{
@@ -35,7 +39,7 @@ body{
     background-color: var(--secondary-color);
 }
 #sidebar{
-    min-width: 5vw;
+    min-width: 11vw;
     width: 5vw;
     height: 100vh;
     z-index: 1000;
@@ -43,6 +47,9 @@ body{
     display: flex;
     flex-direction: column;
     background-color: var(--main-color);
+}
+#sidebar a{
+    text-decoration: none;
 }
 
 #sidebar.expand{
@@ -66,8 +73,9 @@ body{
     margin: auto 0;
 }
 .sidelogo-txt a{
-    color: #fff;
-    font-size: 1.25rem;
+    color: var(--secondary-color);
+    font-family: var(--font-accent);
+    font-size: 1.8rem;
     font-weight: 600;
 }
 #sidebar:not(.expand) .sidelogo-txt,
@@ -76,18 +84,27 @@ body{
 }
 
 .side-navbar{
-    padding: 2rem 0;
+    padding: 3rem 0;
     flex: 1 1 auto;
 }
 a.side-link {
-    padding: 1.5rem;
+    padding: 2rem;
     color: var(--secondary-color);
     display: block;
-    font-size: 2rem;
+    font-size: 1.5rem;
     white-space: nowrap;
     border-left: 3px solid transparent;
 }
-
 li.side-item:nth-child(3) a.side-link {
-    padding-left: 1.1rem; 
+    padding-left: 1.7rem; 
+}
+.side-link i{
+    font-size: 1.5rem;
+}
+.side-link span{
+    padding-left: 30px;
+}
+a.side-link:hover{
+    background-color: rgba(225, 225, 225, .075);
+    border-left: 3px solid #3b7ddd;
 }
