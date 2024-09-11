@@ -175,3 +175,23 @@ main p {
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.52); 
     transform: translateY(-5px); 
 }
+.takeTest .card-header {
+    background-color: var(--main-color);
+    color: #ffffff;
+    padding: 1rem;
+    font-size: 1.25rem;
+}
+.takeTest .card-body {
+    padding: 2rem;
+    text-align: center;
+}
+.takeTest .card-body p{
+    font-family: var(--font-body1);
+    line-height: 1.2;
+    font-size: 1.2rem;
+}
+.takeTest .card-body img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
