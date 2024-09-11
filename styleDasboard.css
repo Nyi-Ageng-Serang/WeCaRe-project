@@ -233,5 +233,66 @@ main p {
     /* Sidebar */
     #sidebar {
         min-width: 80px; 
+        height: 100%; 
+    }
+    #sidelogo-btn img {
+        width: 50px;
+    }
+    .sidelogo-txt a{
+        font-size: 1.4rem;
+    }
+    a.side-link {
+        padding: 1rem;
+        font-size: 1.2rem;
+    }
+    li.side-item:nth-child(1) a.side-link {
+        padding-left: 1.8rem; 
+    }
+    li.side-item:nth-child(2) a.side-link {
+        padding-left: 2rem; 
+    }
+    li.side-item:nth-child(3) a.side-link {
+        padding-left: 1.4rem; 
+    }
+    .side-link i{
+        font-size: 1.2rem;
+    }
+    li.side-item:nth-child(3) .side-link span{
+        padding-left: 22px;
+    }
+    /* Header */
+    .main {
+        height: 60px;
+    }
+    .main .text-end i {
+        font-size: 2.8vw;
+    }
+    .main .text-end span {
+        font-size: 2.5vw;
+    }
+    /* MAIN */
+    main {
+        margin-left: 10vw;
+    }
+    main h1 {
+        padding-top: 1rem;
+    }
+    main p {
+        font-size: 1.5vw;
+        line-height: 1.5;
+    }
+
+    /* Styling untuk section takeTest */
+    .takeTest .card {
+        max-width: 60vw; 
+    }
+    .takeTest .card-header h5{
+        font-size: 1rem;
+    }
+    .takeTest .card-body p{
+        font-size: 1.5vw;
+    }
+    .takeTest .card-body .btn-primary {
+        font-size: 2vw;
     }
 }
