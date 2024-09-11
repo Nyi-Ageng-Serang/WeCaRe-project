@@ -23,3 +23,24 @@ li{
 body{
     background-color: #EBF4F6;
 }
+.wrapper{
+    display: flex;
+}
+.main{
+    min-width: 100vh;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--secondary-color);
+}
+#sidebar{
+    min-width: 20vw;
+    width: 20vw;
+    height: 100vh;
+    z-index: 1000;
+    transition: all .25s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-color);
+}
