@@ -1,16 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
-*{
+* {
     box-sizing: border-box;
 }
 
-:root{
-    /* Warna tema */
+:root {
+    /* Color */
     --main-color: #FFB1B1;
-    /* 121481 */
     --secondary-color: #921A40; 
 
-    /* Tipografi */
+    /* Typografy */
     --font-primary: "Montserrat", sans-serif;
     --font-secondary: "Playfair Display", serif;
     --font-body1: 'Poppins', sans-serif;
@@ -19,7 +18,7 @@
 }
 
 /* SIDEBAR */
-li{
+li {
     list-style: none;
 }
 body, html {
@@ -28,10 +27,10 @@ body, html {
     line-height: 1.6;
     text-decoration: none;
 }
-.wrapper{
+.wrapper {
     display: flex;
 }
-#sidebar{
+#sidebar {
     position: fixed;
     min-width: 90px;
     width: 5vw;
@@ -42,13 +41,13 @@ body, html {
     background-color: var(--main-color);
     z-index: 1000;
 }
-#sidebar a{
+#sidebar a {
     text-decoration: none;
 }
-#sidebar.expand{
+#sidebar.expand {
     width: 220px;
 }
-#sidelogo-btn{
+#sidelogo-btn {
     background-color: transparent;
     border: none;
     padding: 1rem;
@@ -61,21 +60,22 @@ body, html {
     transform: scale(1.09); 
     transition: all 0.3s ease; 
 }
-.sidelogo-txt{
+.sidelogo-txt {
     margin: auto 0;
 }
-.sidelogo-txt a{
+.sidelogo-txt a {
     color: var(--secondary-color);
     font-family: var(--font-accent);
     font-size: 1.7rem;
     font-weight: 600;
 }
 #sidebar:not(.expand) .sidelogo-txt,
-#sidebar:not(.expand) a.side-link span{
+#sidebar:not(.expand) a.side-link span {
     display: none;
 }
+
 /* sidebar Menu */
-.side-navbar{
+.side-navbar {
     padding: 1rem 0;
     flex: 1;
 }
@@ -84,17 +84,17 @@ a.side-link {
     padding: 1rem 0 1rem 1.9rem;
     color: var(--secondary-color);
     display: block;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     white-space: nowrap;
     border-left: 3px solid transparent;
 }
-.side-link i{
+.side-link i {
     font-size: 1.3rem;
 }
-.side-link span{
+.side-link span {
     padding-left: 30px;
 }
-a.side-link:hover{
+a.side-link:hover {
     background-color: rgba(225, 225, 225, .075);
     border-left: 3px solid var(--secondary-color);
 }
@@ -103,7 +103,7 @@ a.side-link:hover{
 }
 
 /* HEADER */
-.main {
+.top {
     width: 100%;
     height: 60px;
     display: flex;
@@ -114,14 +114,14 @@ a.side-link:hover{
     color: var(--secondary-color);
     transition: all 0.3s ease-in-out;
 }
-.main .text-start{
+.top .text-start {
     padding-left: 8rem;
 }
-.main .text-end i {
+.top .text-end i {
     font-size: 2rem;
     font-weight: 500;
 }
-.main .text-end span {
+.top .text-end span {
     padding: 0 2rem 0 0 ;
     font-family: var(--font-accent);
     font-size: 1.5rem;
@@ -133,6 +133,7 @@ main {
     margin: 0 10vw;
     padding: 2rem;
     flex-grow: 1;
+    transition: transform 0.3s ease;
 }
 main h1 {
     font-family: var(--font-secondary);
@@ -176,7 +177,7 @@ main p {
     padding: 2rem;
     text-align: center;
 }
-.takeTest .card-body p{
+.takeTest .card-body p {
     font-family: var(--font-body1);
     line-height: 1.2;
     font-size: 1.2rem;
@@ -202,10 +203,10 @@ main p {
 /* MEDIA QUERY RESPONSIFNESS */
 @media (max-width: 1200px) {
     /* Header */
-    .main .text-end i {
+    .top .text-end i {
         font-size: 1.75rem;
     }
-    .main .text-end span {
+    .top .text-end span {
         font-size: 1.25rem;
     }
 
@@ -228,7 +229,7 @@ main p {
     #sidelogo-btn img {
         width: 50px;
     }
-    .sidelogo-txt a{
+    .sidelogo-txt a {
         font-size: 1.4rem;
     }
     a.side-link {
@@ -244,22 +245,24 @@ main p {
     li.side-item:nth-child(3) a.side-link {
         padding-left: 1.4rem; 
     }
-    .side-link i{
+    .side-link i {
         font-size: 1.2rem;
     }
-    li.side-item:nth-child(3) .side-link span{
+    li.side-item:nth-child(3) .side-link span {
         padding-left: 22px;
     }
+
     /* Header */
-    .main {
+    .top {
         height: 60px;
     }
-    .main .text-end i {
+    .top .text-end i {
         font-size: 2.8vw;
     }
-    .main .text-end span {
+    .top .text-end span {
         font-size: 2.5vw;
     }
+
     /* MAIN */
     main {
         margin-left: 10vw;
@@ -277,10 +280,10 @@ main p {
     .takeTest .card {
         max-width: 60vw; 
     }
-    .takeTest .card-header h5{
+    .takeTest .card-header h5 {
         font-size: 1rem;
     }
-    .takeTest .card-body p{
+    .takeTest .card-body p {
         font-size: 1.5vw;
     }
     .takeTest .card-body .btn-primary {
@@ -290,123 +293,51 @@ main p {
 @media (max-width: 576px) {
     /* Sidebar */
     #sidebar {
-        min-width: 70px;
+        min-width: 60px; 
     }
     #sidelogo-btn img {
         width: 40px;
     }
     .sidelogo-txt a {
-        font-size: 1.2rem; 
-    }
-    a.side-link {
-        padding: 0.75rem; 
-        font-size: 1rem;
-    }
-    li.side-item:nth-child(1) a.side-link {
-        padding-left: 1.4rem; 
-    }
-    li.side-item:nth-child(2) a.side-link {
-        padding-left: 1.5rem; 
-    }
-    li.side-item:nth-child(3) a.side-link {
-        padding-left: 1rem; 
-    }
-    .side-link i {
         font-size: 1.2rem;
     }
-    li.side-item:nth-child(3) .side-link span {
-        padding-left: 20px;
+    a.side-link {
+        font-size: 1rem;
     }
-    
+    .side-link i {
+        font-size: 1rem;
+    }
+
     /* Header */
-    .main {
-        height: 50px; 
+    .top .text-end i {
+        font-size: 2rem;
     }
-    
-    /* MAIN */
-    main {
-        margin-left: 60px; 
-    }
-    main h1 {
-        padding-top: 0.5rem;
+    .top .text-end span {
         font-size: 1.5rem;
     }
+
+    /* Main Content */
+    main {
+        margin: 0 0;
+    }
+    main h1 {
+        font-size: 1.25rem;
+    }
     main p {
-        font-size: 1rem; 
-        line-height: 1.4;
+        font-size: 1.25rem;
     }
 
     /* Styling untuk section takeTest */
     .takeTest .card {
-        max-width: 90vw; 
+        max-width: 90vw;
     }
     .takeTest .card-header h5 {
-        font-size: 0.875rem;
+        font-size: 0.9rem;
     }
     .takeTest .card-body p {
+        font-size: 1.2rem;
+    }
+    .takeTest .card-body .btn-primary {
         font-size: 1rem;
-    }
-    .takeTest .card-body .btn-primary {
-        font-size: 1rem; 
-    }
-}
-@media (max-width: 425px) {
-    /* Sidebar */
-    #sidelogo-btn img {
-        width: 35px;
-    }
-    .sidelogo-txt a {
-        font-size: 3.2vw; 
-    }
-    a.side-link {
-        font-size: 3.2vw;
-    }
-    li.side-item:nth-child(1) a.side-link {
-        padding-left: 4.4vw; 
-    }
-    li.side-item:nth-child(2) a.side-link {
-        padding-left: 5vw; 
-    }
-    li.side-item:nth-child(3) a.side-link {
-        padding-left: 3vw; 
-    }
-    .side-link i {
-        font-size: 3.2vw;
-    }
-    
-    /* Header */
-    .main {
-        height: 50px;
-        margin-left: 1vw;
-    }
-    .main .text-end i {
-        font-size: 4vw;
-    }
-    .main .text-end span {
-        font-size: 3.5vw;
-    }
-    
-    /* MAIN */
-    main h1 {
-        font-size: 5.5vw;
-    }
-    main p {
-        font-size: 3.5vw; 
-        margin-bottom: 0;
-    }
-
-    /* Styling untuk section takeTest */
-    .takeTest {
-        padding: 10px;
-    }
-    .takeTest .card-header h5 {
-        font-size: 2.875vw;
-    }
-    .takeTest .card-body p {
-        font-size: 3vw;
-        margin-bottom: 2rem;
-    }
-    .takeTest .card-body .btn-primary {
-        font-size: 3vw; 
     }
 }
