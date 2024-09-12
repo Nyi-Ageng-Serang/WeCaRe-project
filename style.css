@@ -59,3 +59,16 @@ div small {
     flex-direction: column-reverse;
   }
 }
+
+.story-file {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.story-text {
+  background-color: #ffe9e9;
+  padding: 20px;
+  border: 1px solid #ffb1b1;
+  border-radius: 20px;
+ 
+}
