@@ -1,0 +1,16 @@
+.container {
+  width: 800px;
+  margin: 8% auto;
+}
+
+.tes {
+  background-color: #ffdede;
+  border-radius: 20px;
+  border: 1px solid #ffb1b1;
+  padding: 20px;
+}
+
+.tes .btn {
+  background-color: #921a40;
+  color: white;
+}
