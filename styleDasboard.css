@@ -115,7 +115,7 @@ a.side-link:hover{
     transition: all 0.3s ease-in-out;
 }
 .main .text-start{
-    padding-left: 6rem;
+    padding-left: 8rem;
 }
 .main .text-end i {
     font-size: 2rem;
@@ -130,7 +130,7 @@ a.side-link:hover{
 
 /* MAIN */
 main {
-    margin-left: 5vw;
+    margin: 0 10vw;
     padding: 2rem;
     flex-grow: 1;
 }
