@@ -1,10 +1,12 @@
 body {
   background-color: #fcfcfb;
+  overflow-x: hidden;
 }
 
 div small {
-  background-color: #f2fde3;
-  border: 1px solid #8ab255;
+  background-color: #ffe9e9;
+  border: 1px solid #ffb1b1;
+  color: #921a40;
 }
 
 /*** Navbar Start ***/
@@ -13,7 +15,7 @@ div small {
 }
 
 .nav-bar h1 {
-  color: #8ab255;
+  color: #921a40;
 }
 
 .navbar .navbar-nav .nav-link {
@@ -25,12 +27,19 @@ div small {
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
-  color: #8ab255;
+  color: #ffb1b1;
 }
 
 .btn {
-  background-color: #8ab255;
+  background-color: #921a40;
   border: none;
+  color: white;
+}
+
+.btn:hover {
+  background-color: #ffb1b1;
+  border: none;
+  color: white;
 }
 /*** Navbar End ***/
 
