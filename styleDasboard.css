@@ -96,6 +96,10 @@ a.side-link {
 }
 .side-link span {
     padding-left: 30px;
+    font-weight: 500;
+}
+.side-navbar li:nth-child(2) .side-link span {
+    padding-left: 33px;
 }
 a.side-link:hover {
     background-color: rgba(225, 225, 225, .1);
