@@ -115,11 +115,6 @@ a.side-link:hover {
 }
 
 /* HEADER */
-header{
-    margin-left: 3vw;
-    width: calc(100% - 3vw);
-    border-bottom: 1px solid #07195231;
-}
 .top {
     position: relative;
     width: calc(100% - 3vw);
@@ -128,9 +123,20 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 0 2rem;
+    margin-left: 2rem;
     color: var(--secondary-color);
     transition: all 0.3s ease-in-out;
 }
+.top::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 12vw; 
+    width: calc(100% - 12vw); 
+    height: 1px; 
+    background-color: #07195231;
+}
+
 
 .top .text-start {
     padding-left: 8rem;
