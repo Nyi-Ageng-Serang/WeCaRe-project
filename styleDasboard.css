@@ -32,7 +32,7 @@ body, html {
 }
 #sidebar {
     position: fixed;
-    min-width: 90px;
+    min-width: 50px;
     width: 5vw;
     height: 100vh;
     transition: all .25s ease-in-out;
@@ -47,13 +47,16 @@ body, html {
 #sidebar.expand {
     width: 220px;
 }
+.d-flex{
+   padding-top: 1rem; 
+}
 #sidelogo-btn {
     background-color: transparent;
     border: none;
-    padding: 1rem;
+    
 }
 #sidelogo-btn img {
-    width: 60px;
+    width: 50px;
     height: auto; 
 }
 #sidelogo-btn:hover img {
@@ -66,7 +69,7 @@ body, html {
 .sidelogo-txt a {
     color: var(--secondary-color);
     font-family: var(--font-accent);
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     font-weight: 600;
 }
 #sidebar:not(.expand) .sidelogo-txt,
@@ -81,22 +84,23 @@ body, html {
 }
 a.side-link {
     font-family: var(--font-body2);
-    padding: 1rem 0 1rem 1.9rem;
+    padding: 1rem 0 1rem 1.1rem;
     color: var(--secondary-color);
     display: block;
-    font-size: 1.2rem;
+    font-size: 1rem;
     white-space: nowrap;
     border-left: 3px solid transparent;
 }
 .side-link i {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 .side-link span {
     padding-left: 30px;
 }
 a.side-link:hover {
-    background-color: rgba(225, 225, 225, .075);
+    background-color: rgba(225, 225, 225, .1);
     border-left: 3px solid var(--secondary-color);
+    font-style: italic;
 }
 .side-footer {
     border-top: 1px solid rgba(255, 255, 255, 0.2);
