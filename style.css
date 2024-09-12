@@ -1,16 +1,31 @@
 .container {
   width: 800px;
-  margin: 8% auto;
+  margin: 5% auto;
 }
 
 .tes {
   background-color: #ffdede;
   border-radius: 20px;
   border: 1px solid #ffb1b1;
-  padding: 20px;
+  padding: 30px;
+}
+
+.tes h1 {
+  margin-bottom: 20px;
+}
+
+.tes p {
+  font-weight: 500;
+  font-size: 17px;
 }
 
 .tes .btn {
+  margin-top: 20px;
   background-color: #921a40;
   color: white;
+}
+
+
+.tes ol li {
+  background-color: #ffeded;
 }
