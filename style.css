@@ -4,6 +4,11 @@ body {
   overflow-x: hidden;
 }
 
+body p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
 .btn {
   background-color: #921a40;
   border: none;
@@ -118,13 +123,27 @@ div small {
 }
 /*** Copyright Start ***/
 
-
 /* ! About File */
 main .about {
-  margin-bottom: 50px;
+  margin: 50px auto;
 }
 
-main .about-intro {
+main .about .intro {
+  font-size: 17px;
+  letter-spacing: 1.5%;
+  font-weight: 500;
+}
+
+main .about-intro h1 {
   background-color: #fae7e7;
-  padding: 30px;
+  padding: 50px 0;
+}
+main .about .step {
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 1.5%;
+}
+main .about .penutup {
+  font-size: 18px;
+  text-align: center;
 }
