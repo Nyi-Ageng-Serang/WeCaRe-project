@@ -70,5 +70,41 @@ div small {
   padding: 20px;
   border: 1px solid #ffb1b1;
   border-radius: 20px;
- 
+}
+
+.karir {
+  margin-bottom: 8%;
+}
+
+.karir .card {
+  
+  background-color: #fcfcfb;
+  box-shadow: 0 0 10px #ffe9e9;
+  border: none;
+}
+
+.footer {
+  background-color: #ffe9e9;
+  border: 1px solid #ffb1b1;
+  padding: 20px;
+}
+
+.footer-item {
+  margin-bottom: 20px;
+}
+
+.footer-logo {
+  margin-bottom: 10px;
+}
+
+.footer-logo a {
+  text-decoration: none;
+  color: #921a40;
+}
+
+.copyright {
+  background-color: #921a40;
+  color: #fcfcfb;
+  font-weight: 500;
+  padding: 10px 0;
 }
