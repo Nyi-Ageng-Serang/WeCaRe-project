@@ -125,6 +125,12 @@ button:hover {
   text-align: center;
 }
 
+.link-login {
+  margin-top: 3vh;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
 /* Responsiveness */
 
 /* Mobile screen */
