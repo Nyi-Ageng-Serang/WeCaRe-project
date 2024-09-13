@@ -117,3 +117,14 @@ div small {
   padding: 10px 0;
 }
 /*** Copyright Start ***/
+
+
+/* ! About File */
+main .about {
+  margin-bottom: 50px;
+}
+
+main .about-intro {
+  background-color: #fae7e7;
+  padding: 30px;
+}
