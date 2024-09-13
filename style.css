@@ -1,6 +1,19 @@
 body {
   background-color: #fcfcfb;
+  color: #1f1f1f;
   overflow-x: hidden;
+}
+
+.btn {
+  background-color: #921a40;
+  border: none;
+  color: white;
+  font-weight: 500;
+}
+
+.btn:hover {
+  background-color: #ffb1b1;
+  border: none;
 }
 
 div small {
@@ -11,49 +24,35 @@ div small {
 
 /*** Navbar Start ***/
 .nav-bar {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid #ffe9e9;
 }
 
-.nav-bar h1 {
+.navbar .navbar-brand h1 {
   color: #921a40;
 }
 
 .navbar .navbar-nav .nav-link {
-  padding: 10px 12px;
-  font-weight: 600;
-  font-size: 17px;
-  transition: 0.5s;
+  padding: 10px 20px;
+  font-weight: 700;
+  font-size: 18px;
+  transition: 0.3s;
 }
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
-  color: #ffb1b1;
-}
-
-.btn {
-  background-color: #921a40;
-  border: none;
-  color: white;
-}
-
-.btn:hover {
-  background-color: #ffb1b1;
-  border: none;
-  color: white;
+  color: #921a40;
+  text-shadow: 0 0 10px #ffe9e9;
 }
 /*** Navbar End ***/
 
 /*** Hero start ***/
 .hero {
   min-height: 600px;
-  padding: 60px 10px;
+  padding: 50px 10px;
 }
+/*** Hero End ***/
 
-/* story start */
-.story {
-  margin-bottom: 100px;
-}
-
+/*** story Start ***/
 @media (max-width: 990px) {
   .story {
     flex-direction: column-reverse;
@@ -71,18 +70,21 @@ div small {
   border: 1px solid #ffb1b1;
   border-radius: 20px;
 }
+/*** story End ***/
 
-.karir {
-  margin-bottom: 8%;
+/*** Career Start ***/
+.career {
+  margin: 100px auto;
 }
 
-.karir .card {
-  
+.career .card {
   background-color: #fcfcfb;
   box-shadow: 0 0 10px #ffe9e9;
   border: none;
 }
+/*** Career Start ***/
 
+/*** Footer Start ***/
 .footer {
   background-color: #ffe9e9;
   border: 1px solid #ffb1b1;
@@ -93,6 +95,10 @@ div small {
   margin-bottom: 20px;
 }
 
+.footer-item a {
+  text-decoration: none;
+}
+
 .footer-logo {
   margin-bottom: 10px;
 }
@@ -101,10 +107,13 @@ div small {
   text-decoration: none;
   color: #921a40;
 }
+/*** Footer Start ***/
 
+/*** Copyright Start ***/
 .copyright {
   background-color: #921a40;
   color: #fcfcfb;
   font-weight: 500;
   padding: 10px 0;
 }
+/*** Copyright Start ***/
