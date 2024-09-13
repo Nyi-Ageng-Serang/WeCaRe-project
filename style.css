@@ -4,7 +4,7 @@
 }
 
 .tes {
-  background-color: #ffdede;
+  background-color: #ffeded;
   border-radius: 20px;
   border: 1px solid #ffb1b1;
   padding: 30px;
@@ -16,17 +16,31 @@
 }
 
 .tes p {
-  font-weight: 400;
-  font-size: 17px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.tes img {
+  width: 200px;
+  margin: auto;
 }
 
 .tes .btn {
   margin: 20px 15px;
   background-color: #921a40;
   color: white;
+  font-weight: 500;
 }
 
+.tes .btn:hover {
+  background-color: #ffb1b1;
+  color: rgb(22, 20, 20);
+}
 
 .tes ol li {
   background-color: #ffeded;
+}
+
+.tes .question {
+  margin: 20px auto;
 }
