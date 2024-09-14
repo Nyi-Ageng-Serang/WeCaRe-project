@@ -208,3 +208,7 @@ button:hover {
     padding: 10px;
   }
 }
+
+.login #login-form #login-alert{
+  font-size: 14px !important;
+}

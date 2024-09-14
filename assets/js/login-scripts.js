@@ -11,15 +11,19 @@ function login(event) {
   const inputUsername = document.getElementById("username").value;
   const inputPassword = document.getElementById("password").value;
 
+  // Mengambil elemen alert
+  const alertBox = document.getElementById("login-alert");
+
   // Mengecek apakah username dan password cocok dengan data yang ada
-  if (
-    inputUsername === loginData.username &&
-    inputPassword === loginData.password
-  ) {
+  if (inputUsername === loginData.username && inputPassword === loginData.password) {
+    // Menyembunyikan alert jika login berhasil
+    alertBox.classList.add("d-none");
+
     alert("Login berhasil!");
     window.location.href = "../index.html";
   } else {
-    alert("Username atau password salah!");
+    // Menampilkan alert jika login gagal
+    alertBox.classList.remove("d-none");
   }
 }
 
@@ -27,5 +31,5 @@ function register(e) {
   e.preventDefault();
 }
 
-document.querySelector("form").addEventListener("submit", login);
-document.querySelector("form").addEventListener("submit", register);
+// Menambahkan event listener ke form
+document.getElementById("login-form").addEventListener("submit", login);
