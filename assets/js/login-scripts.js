@@ -1,35 +1,30 @@
 const loginData = {
-  username: "user",
-  password: "12345",
+  username: localStorage.getItem("username"),
+  password: localStorage.getItem("password"),
 };
 
 // Fungsi login
 function login(event) {
-  event.preventDefault(); // Mencegah form di-submit
+  event.preventDefault(); 
 
-  // Mengambil nilai input username dan password
+  // Ambil input username dan password
   const inputUsername = document.getElementById("username").value;
   const inputPassword = document.getElementById("password").value;
 
-  // Mengambil elemen alert
+  // Ambil elemen alert
   const alertBox = document.getElementById("login-alert");
 
-  // Mengecek apakah username dan password cocok dengan data yang ada
+  // Cek apakah username dan password cocok
   if (inputUsername === loginData.username && inputPassword === loginData.password) {
-    // Menyembunyikan alert jika login berhasil
+    // Sembunyikan alert jika login berhasil
     alertBox.classList.add("d-none");
-
     alert("Login berhasil!");
-    window.location.href = "../index.html";
+    window.location.href = "../index.html"; // Arahkan ke halaman utama
   } else {
-    // Menampilkan alert jika login gagal
+    // Tampilkan alert jika login gagal
     alertBox.classList.remove("d-none");
   }
 }
 
-function register(e) {
-  e.preventDefault();
-}
-
-// Menambahkan event listener ke form
+// Tambahkan event listener untuk form login
 document.getElementById("login-form").addEventListener("submit", login);
