@@ -7,22 +7,56 @@ function saveScore(category, score) {
 function handleFormSubmit(category, questions) {
   let totalScore = 0;
 
-  question.forEach((questionName) => {
+  questions.forEach((questionName) => {
     const pertanyaan = document.querySelector(
       `input[name="${questionName}"]:checked`
     );
-
     let score = 0;
+
     if (pertanyaan) {
       score = parseInt(pertanyaan.value);
     }
 
     totalScore += score;
   });
+
+  // menyimpan total score untuk setiap bidang
+  saveScore(category, totalScore);
+
+  // mengarahkan ke halaman selesai
+  window.location.href = "selesai.html";
 }
 
-// menyimpan total score untuk setiap bidang
-saveScore(category, totalScore);
+//menghitung total score keseluruhan
+function calculateTotalScore() {
+  const scoreMedsos = parseInt(localStorage.getItem("scoreMedsos")) || 0;
+  const scoreAffiliate = parseInt(localStorage.getItem("scoreAffiliate")) || 0;
+  const scoreDesign = parseInt(localStorage.getItem("scoreDesign")) || 0;
+  const scoreWrite = parseInt(localStorage.getItem("scoreWrite")) || 0;
 
-// mengarahkan ke halaman selesai
-window.location.href = "selesai.html";
+  //menentukan rekomendasi
+  let rekomendasi = "";
+  const hightScore = Math.max(
+    scoreMedsos,
+    scoreAffiliate,
+    scoreDesign,
+    scoreWrite
+  );
+
+  if (hightScore === scoreMedsos) {
+    rekomendasi = "kamu cocok menjadi admin media sosial";
+  } else if (hightScore === scoreAffiliate) {
+    rekomendasi = "kamu cocok dalam bidang Affiliate";
+  } else if (hightScore === scoreDesign) {
+    rekomendasi = "kamu cocok dalam bidang freelance graphic design";
+  } else if (hightScore === scoreWrite) {
+    rekomendasi = "kamu cocok sebagai freelance content writer";
+  }
+
+  //menampilkan hasil di halaman selesai
+  const result = document.getElementById("result");
+
+  if (result) {
+    result.innerHTML = `<h2>${rekomendasi}<h2>`;
+  }
+}
