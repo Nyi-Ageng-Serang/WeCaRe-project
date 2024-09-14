@@ -17,15 +17,14 @@ function login(event) {
     inputPassword === loginData.password
   ) {
     alert("Login berhasil!");
-    window.location.href = "../indeks.html";
+    window.location.href = "../index.html";
   } else {
     alert("Username atau password salah!");
   }
 }
 
 function register(e) {
-    e.preventDefault();
-
+  e.preventDefault();
 }
 
 document.querySelector("form").addEventListener("submit", login);
