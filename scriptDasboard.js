@@ -6,20 +6,22 @@ hamburger.addEventListener("click", function() {
 
 //-------- FUNGSI UNTUK MELIHAT USER TELAH MENGIKUTI TEST ATAU BELUM PERNAH ---------- //
 document.addEventListener('DOMContentLoaded', () => {
-    // Memeriksa apakah pengguna telah melakukan tes
-    const testCompleted = localStorage.getItem('testCompleted') === 'true';
-    
-    if (testCompleted) {
-        // Tampilkan pelatihan berdasarkan kategori yang direkomendasikan
-        document.getElementById('takeTest').style.display = 'none';
-        document.getElementById('trainingSection').style.display = 'block';
-        displayTrainingByCategory(); // Panggil fungsi untuk menampilkan pelatihan
-    } else {
-        // Tampilkan bagian untuk melakukan tes
-        document.getElementById('takeTest').style.display = 'block';
-        document.getElementById('trainingSection').style.display = 'none';
-    }
+  // Memeriksa apakah pengguna telah melakukan tes
+  const testCompleted = localStorage.getItem('testCompleted') === 'true';
+  
+  const takeTestSection = document.getElementById('takeTest');
+  const trainingSection = document.getElementById('trainingSection');
+  
+  if (testCompleted) {
+      takeTestSection.style.display = 'none';
+      trainingSection.style.display = 'block';
+      displayTrainingByCategory(); // Panggil fungsi untuk menampilkan pelatihan
+  } else {
+      takeTestSection.style.display = 'flex';  // memaastikan display tetap 'flex'
+      trainingSection.style.display = 'none';
+  }
 });
+
 
 
 // Menampilkan pelatihan berdasarkan kategori yang direkomendasikan
