@@ -9,6 +9,10 @@ body p {
   font-weight: 500;
 }
 
+.navbar-toggler {
+  color: #921a40;
+}
+
 .btn {
   background-color: #921a40;
   border: none;
