@@ -167,14 +167,14 @@ main p {
 
 /* Styling untuk section takeTest */
 .takeTest {
-    padding: 20px;
-    margin: 20px 0;
+    padding: 10px;
+    margin: 10px 0 10rem 0;
     display: flex;
     justify-content: center;
 }
 .takeTest .card {
     width: 100%;
-    max-width: 60vw; 
+    max-width: 50vw; 
     border-radius: 10px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); 
     background-color: #ffffff;
@@ -188,7 +188,7 @@ main p {
 .takeTest .card-header {
     background-color: var(--secondary-color);
     color: #ffffff;
-    padding: 1rem;
+    padding: 1.2rem 0 0 0;
 }
 .takeTest .card-header .card-title{
     font-size: 1.5rem;
@@ -196,6 +196,7 @@ main p {
 .takeTest .card-body {
     padding: 2rem;
     text-align: center;
+    align-items: center;
 }
 .takeTest .card-body p {
     font-family: var(--font-body1);
@@ -203,7 +204,7 @@ main p {
     font-size: 1.4rem;
 }
 .takeTest .card-body img {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
     margin-bottom: 1rem;
 }
