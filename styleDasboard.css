@@ -54,8 +54,7 @@ body, html {
 }
 #sidelogo-btn {
     background-color: transparent;
-    border: none;
-    
+    border: none; 
 }
 #sidelogo-btn img {
     width: 50px;
@@ -116,7 +115,6 @@ a.side-link:hover {
 .top {
     position: relative;
     width: calc(100% - 5vw);
-    height: 60px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -224,7 +222,26 @@ main p {
 
 /* MEDIA QUERY RESPONSIFNESS */
 @media (max-width: 1200px) {
+    /* SIDE bar */
+    #sidebar {
+        width: 5vw;
+    }
+    #sidelogo-btn img {
+        width: 40px; 
+    }
+    a.side-link {
+        padding: 1rem 0 1rem 0.9rem;
+    }
+    .side-link span {
+        padding-left: 20px;
+    }
+    .side-navbar li:nth-child(2) .side-link span {
+        padding-left: 23px;
+    }
     /* Header */
+    .top {
+        padding: 2rem 0;
+    }
     .top .text-end i {
         font-size: 1.75rem;
     }
@@ -232,20 +249,23 @@ main p {
         font-size: 1.25rem;
     }
     .top::before {
-        left: 13vw;
+        left: 16vw;
     }
-
     /* Main Content */
     main {
-        margin-left: 14vw;
+        margin-left: 16vw;
     }
     main p {
+        font-size: 1.2rem;
         margin-bottom: 2rem;
     }
 
     /* Styling untuk section takeTest */
     .takeTest .card-body p {
-        font-size: 1rem;
+        font-size: 1.2rem;
+    }
+    .takeTest .card-body .btn-primary {
+        font-size: 1.3rem;
     }
 }
 @media (max-width: 992px) {
