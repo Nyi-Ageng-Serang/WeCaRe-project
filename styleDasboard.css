@@ -225,34 +225,40 @@ main p {
 .pelatihan-container {
     padding: 1rem;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border: 2px solid var(--secondary-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--secondary-color);
+}
+.title-pelatihan h2{
+    font-size: 3vw;
+    font-weight: 900;
+    margin-top: 10px;
+    color: var(--main-color);
+    font-family: var(--font-body1);
 }
 .row{
-    padding: 2rem;
+    padding: 1rem;
     justify-content: space-evenly;
 }
 .col {
     display: flex;
     justify-content: center;
-    margin-bottom: 1rem;
 }
 .card {
     background-color: #ffffff;
     border: 1px solid #e0e0e0;
     border-radius: 0.5rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    height: 100%; /* Ensures cards are the same height */
+    height: 100%; 
     flex-direction: column;
 }
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 .card-img-top {
-    height: 200px;
+    height: 150px;
     object-fit: fill;
 }
 .card-body {
@@ -260,10 +266,10 @@ main p {
     flex-direction: column;
     flex-grow: 1; 
     justify-content: space-between; 
-    padding: 1.25rem;
 }
 .card-title {
     font-family: var(--font-primary);
+    color: var(--secondary-color);
     font-size: 1.5rem;
     line-height: 1;
     font-weight: 600;
@@ -271,11 +277,12 @@ main p {
 }
 .card-text {
     font-size: 1rem;
-    color: #555555;
-    margin-bottom: 1rem;
+    color: #363535;
+    margin-bottom: 0;
 } 
 .buttonPelatihan {
     display: inline-block;
+    margin-top: 1rem;
     padding: 0.5rem 1rem;
     font-size: 1rem;
     font-weight: 600;

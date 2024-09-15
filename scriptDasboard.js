@@ -57,6 +57,7 @@ function displayTrainingByCategory() {
               <div class="card-body">
                 <h3 class="card-title">${item.category}</h3>
                 <p class="card-text">${item.level}</p>
+                <p class="card-text">Provider : ${item.provider}</p>
                 <a href="${item.registration_url}" class="buttonPelatihan">Lihat Lebih lanjut</a>
               </div>
             </div>
