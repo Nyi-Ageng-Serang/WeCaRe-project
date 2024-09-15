@@ -1,3 +1,7 @@
+// Menandai tes sebagai selesai
+localStorage.setItem('testCompleted', 'true');
+
+
 // menyimpan score ke localStorage
 function saveScore(category, score) {
   localStorage.setItem(category, score);
