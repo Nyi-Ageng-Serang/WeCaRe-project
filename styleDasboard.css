@@ -31,7 +31,7 @@ body, html {
 }
 #sidebar {
     position: fixed;
-    min-width: 50px;
+    min-width: 60px;
     width: 4vw;
     height: 100vh;
     transition: all .25s ease-in-out;
@@ -118,8 +118,8 @@ a.side-link:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem 0;
-    margin-left: 2rem;
+    padding: 1rem 0;
+    margin-left: 3rem;
     color: var(--secondary-color);
     transition: all 0.3s ease-in-out;
 }
@@ -127,7 +127,7 @@ a.side-link:hover {
     content: "";
     position: absolute;
     bottom: 0;
-    left: 9vw; 
+    left: 10vw; 
     width: calc(100% - 8.5vw); 
     height: 1px; 
     background-color: #07195231;
@@ -148,7 +148,7 @@ a.side-link:hover {
 
 /* MAIN */
 main {
-    margin: 0 5vw 0 10vw;
+    margin: 0 5vw 0 15vw;
     padding: 2rem;
     flex-grow: 1;
     transition: transform 0.3s ease;
