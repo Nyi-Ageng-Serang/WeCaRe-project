@@ -29,8 +29,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-
-
 // Menampilkan pelatihan berdasarkan kategori yang direkomendasikan
 function displayTrainingByCategory() {
     const recommendedCategory = localStorage.getItem("recommendedCategory");
@@ -42,6 +40,7 @@ function displayTrainingByCategory() {
 
     let API = "https://66e3fab0d2405277ed1287b5.mockapi.io/api/dasboard/trainings";
     let listPelatihan = document.getElementById("list-pelatihan");
+    let spinner = document.getElementById("loading-spinner"); // Ambil elemen spinner
 
     fetch(API)
       .then((response) => response.json())
@@ -66,5 +65,9 @@ function displayTrainingByCategory() {
       })
       .catch((error) => {
         console.error('Error fetching data:', error);
-      });
+      })
+      .finally(() => {
+        console.log("Fetching selesai, menghapus spinner");
+        spinner.remove(); // Menghapus elemen spinner dari DOM
+    });    
 }

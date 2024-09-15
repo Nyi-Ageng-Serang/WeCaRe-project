@@ -230,6 +230,7 @@ main p {
 }
 .row{
     padding: 2rem;
+    justify-content: space-evenly;
 }
 .col {
     display: flex;
