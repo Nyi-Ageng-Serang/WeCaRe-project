@@ -41,9 +41,10 @@ function calculateTotalScore() {
   const scoreDesign = parseInt(localStorage.getItem("scoreDesign"));
   const scoreWrite = parseInt(localStorage.getItem("scoreWrite"));
  
-  
   let rekomendasi = "";
-  // mencari nilai tertingi dari setiap bidang freelance
+  let recommendedCategory = "";
+
+  // mencari nilai tertinggi dari setiap bidang freelance
   const hightScore = Math.max(
     scoreMedsos,
     scoreAffiliate,
@@ -55,22 +56,28 @@ function calculateTotalScore() {
   if (hightScore === scoreMedsos) {
     rekomendasi =
       "Berdasarkan hasil tes, kamu memiliki minat dan bakat yang kuat dalam mengelola media sosial. Pertimbangkan untuk mempelajari lebih lanjut tentang manajemen akun media sosial, pembuatan konten, dan strategi pemasaran digital. kamu dapat mulai dengan kursus online atau bergabung dengan komunitas profesional di bidang ini";
+    recommendedCategory = "Digital Marketing";
   } else if (hightScore === scoreAffiliate) {
     rekomendasi =
       "kamu tampaknya memiliki minat dalam affiliate marketing. Pelajari lebih lanjut tentang strategi pemasaran afiliasi, bagaimana memilih produk yang tepat, dan memanfaatkan media sosial serta blog untuk mempromosikan produk. Kursus online dapat membantu kamu memahami lebih dalam tentang bidang ini";
+    recommendedCategory = "Affiliate Marketing";
   } else if (hightScore === scoreDesign) {
     rekomendasi =
       "Hasil tes kamu menunjukkan bahwa kamu memiliki minat yang tinggi dalam desain grafis. Canva adalah alat yang sangat baik untuk memulai. Pertimbangkan untuk mengambil kursus desain grafis dan berlatih membuat berbagai materi visual untuk meningkatkan keterampilan kamu.";
+    recommendedCategory = "Graphic Design";
   } else if (hightScore === scoreWrite) {
     rekomendasi =
       "kamu menunjukkan minat yang besar dalam menulis konten. Mulailah dengan menulis artikel, blog, atau konten untuk situs web. Pertimbangkan untuk mengikuti kursus menulis atau bergabung dengan kelompok penulis untuk mendapatkan umpan balik dan meningkatkan keterampilan kamu.";
+    recommendedCategory = "Content CopyWriting";
   }
+
+  // Simpan kategori yang direkomendasikan ke localStorage
+  localStorage.setItem("recommendedCategory", recommendedCategory);
 
   //menampilkan hasil di halaman selesai
   const result = document.getElementById("result");
-
+  
   if (result) {
-    result.innerHTML = `
-    <p>${rekomendasi}<p>`;
+    result.innerHTML = `<p>${rekomendasi}</p>`;
   }
 }
